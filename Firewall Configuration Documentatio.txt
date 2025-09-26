@@ -1,0 +1,66 @@
+Firewall Configuration Documentation :
+
+1] Opening Windows Defender Firewall :
+
+- Opened Control Panel and launched "Windows Defender Firewall"
+
+- Clicked “Advanced settings” to access the full firewall configuration screens.
+
+2] Viewing Inbound Rules :
+
+- Selected "Inbound Rules" to review existing rules.
+
+- Verified current rules and noted the list before making changes.
+
+3] Creating a Block Rule for Port 23 (Telnet) :
+
+- Clicked "New Rule" and choose "Port"
+
+- Selected "TCP" and specified port number 23.
+
+- Choose "Block the connection" applied to all profiles.
+
+- Named rule Block Telnet port 23.
+
+4] Testing the Block Rule :
+
+- Used Python command to test port connectivity:
+
+python -m http.server 23
+
+And
+
+python -c "import socket; s=socket.socket(); print(s.connect_ex(('localhost', 23)))"
+Observed the command output was 0, meaning the block rule was not effective.
+
+5] Troubleshooting :
+
+- Checked for conflicting rules, confirmed the block rule was enabled for all profiles.
+
+- Verified that the Windows Firewall was ON.
+
+- Attempted to test with telnet, but utilities were not installed.
+
+6] Creating an Allow Rule for SSH (Port 22) :
+
+- Clicked "New Rule" in Inbound Rules, selected "Port".
+
+- Selected "TCP" and specified port number 22.
+
+- Choose "Allow the connection" for all profiles.
+
+- Named rule Allow SSH port 22.
+
+7] Restoring Firewall State :
+
+Deleted the block rule for port 23 to bring firewall back to its original state.
+
+8] Proof and Screenshots :
+
+Saved screenshots of:
+
+The inbound rules list showing block/allow rules.
+
+The rule configuration dialogs.
+
+Terminal showing command tests.
