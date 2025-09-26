@@ -64,3 +64,11 @@ The inbound rules list showing block/allow rules.
 The rule configuration dialogs.
 
 Terminal showing command tests.
+
+9] Summarizing about Firewall Filter Traffic :
+
+Firewall rules act as gatekeepers for network traffic, allowing or blocking connections based on defined criteria such as ports, applications, and protocols. The rules created—one to block inbound connections on Telnet port 23 and another to allow connections on SSH port 22—demonstrate how a firewall can granularly regulate access.
+
+A block rule for port 23 prevents potential attacks by stopping unauthorized Telnet traffic, a protocol known for security vulnerabilities. An allow rule for port 22 ensures that secure SSH traffic needed for legitimate remote management is permitted. By specifying which ports or programs are allowed or denied, the firewall enforces the organization’s network policies, reduces exposure to threats, and protects sensitive resources from unwanted access.
+
+This selective filtering strengthens overall security by ensuring only trusted services are reachable, helping to prevent unwanted intrusions and data breaches while maintaining accessibility for critical, secure operations
