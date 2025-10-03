@@ -17,16 +17,18 @@ Configure and test basic firewall rules to allow or block traffic on Windows usi
 
 # Screenshots :
 
-
+## Block Telnet Port 23
 <img width="1919" height="445" alt="Image" src="https://github.com/user-attachments/assets/293b6471-fa3a-4239-a091-1edfd48f1f85" />
 
 
+## Python Commands
 <img width="891" height="37" alt="Image" src="https://github.com/user-attachments/assets/1df3ec3d-dab1-4caa-983d-51ba591ed1a9" />
 
 
 <img width="389" height="37" alt="Image" src="https://github.com/user-attachments/assets/8b1c3bb0-a8e0-43ce-b1bb-2348ae75c3fe" />
 
 
+## SSH Port 22
 <img width="1919" height="505" alt="Image" src="https://github.com/user-attachments/assets/637e3670-05eb-4486-80c0-f884381485cf" />
 
 # Troubleshooting :
