@@ -15,14 +15,19 @@ Configure and test basic firewall rules to allow or block traffic on Windows usi
 - Named as “Block Telnet port 23.”
 - Tested the Block Rule
 
-Used Python command for connectivity test:
+# Screenshots :
 
-python -m http.server 23
 
-And
+<img width="1919" height="445" alt="Image" src="https://github.com/user-attachments/assets/293b6471-fa3a-4239-a091-1edfd48f1f85" />
 
-python -c "import socket; s=socket.socket(); print(s.connect_ex(('localhost', 23)))"
-Connection was still possible, indicating further troubleshooting was needed.
+
+<img width="891" height="37" alt="Image" src="https://github.com/user-attachments/assets/1df3ec3d-dab1-4caa-983d-51ba591ed1a9" />
+
+
+<img width="389" height="37" alt="Image" src="https://github.com/user-attachments/assets/8b1c3bb0-a8e0-43ce-b1bb-2348ae75c3fe" />
+
+
+<img width="1919" height="505" alt="Image" src="https://github.com/user-attachments/assets/637e3670-05eb-4486-80c0-f884381485cf" />
 
 # Troubleshooting :
 
